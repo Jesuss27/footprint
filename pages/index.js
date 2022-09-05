@@ -9,11 +9,11 @@ import Pricing from "../components/Pricing"
 import Feedback from "../components/Feedback"
 import Features from "../components/Features"
 import Download from "../components/Download"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
     <div >
-      
      <Hero />
      <Philosophy />
      <About />
@@ -21,6 +21,8 @@ export default function Home() {
      <Pricing />
      <Feedback />
      <Features />
+     <Download />
+     <Footer />
     </div>
   )
 }
