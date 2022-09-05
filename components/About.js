@@ -1,5 +1,5 @@
 import { CheckIcon } from '@heroicons/react/24/outline'
-import Marketing from '../icons/marketing'
+import Marketing from '../icons/Marketing'
 
 
 const pricing = {
