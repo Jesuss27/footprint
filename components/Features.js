@@ -39,7 +39,7 @@ export default function Example() {
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-          <div className="relative lg:col-start-2 lg:row-start-1">
+          <div className="hidden lg:block relative lg:col-start-2 lg:row-start-1">
             <svg
               className="absolute top-0 right-0 -mt-20 -mr-20 hidden lg:block"
               width={404}

@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Main front page UI */}
         <main className="bg-white max-w-7xl mx-auto">
           <div className="flex pb-20 pt-16  lg:grid lg:grid-cols-2">
-            <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2 lg:h-full">
+            <div className=" hidden lg:block relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2 lg:h-full">
                 <img
                 className="absolute inset-0 w-full h-full object-cover"
                 src="https://source.unsplash.com/Nf5fSqHm-iY"
@@ -17,7 +17,7 @@ export default function Hero() {
             </div>
             {/* column-split */}
             <div className="flex flex-col px-4 text-left sm:px-8  lg:col-start-2 lg:py-48 xl:pr-16">
-              <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl lg:text-left xl:text-6xl">
+              <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl text-center lg:text-left md:text-6xl lg:text-5xl lg:text-left xl:text-6xl">
                 <span className="block xl:inline">Make every minute count. Seize the day!</span>{' '}
                 
               </h1>
