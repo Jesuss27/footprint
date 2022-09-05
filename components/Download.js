@@ -6,7 +6,7 @@ export default function Hero() {
     return (
       <div className="relative bg-gray-50">
         {/* Main front page UI */}
-        <main className="bg-white max-w-7xl mx-auto">
+        <main className=" max-w-7xl mx-auto">
           <div className="flex pb-20 pt-16  lg:grid lg:grid-cols-2">
             <div className=" hidden lg:block relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2 lg:h-full">
                 <img

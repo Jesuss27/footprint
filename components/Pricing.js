@@ -13,7 +13,7 @@ const buildFeatures = [
 
 export default function Example() {
   return (
-    <div className="bg-gray-900">
+    <div className="">
       <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
           <h2 className="text-6xl font-bold text-gray-300">Websites</h2>

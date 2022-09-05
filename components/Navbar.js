@@ -28,14 +28,9 @@ const navigation = [
                 href="#"
                 className="inline-block rounded-md border border-transparent bg-black py-2 px-4 text-base font-medium text-white hover:bg-opacity-75"
               >
-                Sign in
+                Contact
               </a>
-              <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-white py-2 px-4 text-base font-medium text-indigo-600 hover:bg-indigo-50"
-              >
-                Sign up
-              </a>
+              
             </div>
           </div>
           <div className="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">

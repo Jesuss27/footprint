@@ -33,7 +33,7 @@ const pricing = {
 
 export default function Example() {
   return (
-    <div className="mx-auto max-w-7xl bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl  py-24 px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none lg:text-6xl">
         Not sure where to start?<br/>
         No problem!

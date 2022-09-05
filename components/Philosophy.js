@@ -4,13 +4,13 @@ import mobile from "../images/mobile-phone-edited.png"
 
 export default function Hero() {
     return (
-      <div className="relative bg-gray-50">
+      <div className="relative bg-primary">
         
   
         {/* Main front page UI */}
   
   
-        <main className="bg-white max-w-7xl mx-auto">
+        <main className="bg-primary max-w-7xl mx-auto">
             
 
           <div className="flex pb-20 pt-16">
