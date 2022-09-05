@@ -78,7 +78,7 @@ export default function Example() {
           </div>
           <div className="mt-8 lg:mt-0 flex flex-col justify-center">
             {
-                features.map(feature => <MarketingItem title={feature.title} description={feature.description} imageUrl={feature.imageUrl}  />)
+                features.map(feature => <MarketingItem title={feature.title} key={feature.title} description={feature.description} imageUrl={feature.imageUrl}  />)
             }
             
 
