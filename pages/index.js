@@ -11,7 +11,8 @@ import Features from "../components/Features"
 import Download from "../components/Download"
 import Footer from "../components/Footer"
 import {motion} from "framer-motion"
-
+import Marketing from '../components/Marketing'
+import Practice from '../components/Practice'
 export default function Home() {
   var componentArray = [
     
@@ -22,7 +23,7 @@ export default function Home() {
      <Feedback key={"523"} />,
      <Features  key={"173"}/>,
      <Download key={"193"} />,
-     <Footer key={"129"} />,
+     <Footer key={"129"} />,     
   ]
 
   const variants = {
@@ -50,6 +51,7 @@ export default function Home() {
       <motion.div whileInView={"visible"} initial={"hidden"} variants={variants} key={component.key}>{component}</motion.div>
      ))}
     </motion.div>
+    {/* <Practice /> */}
     </div>
     
   )

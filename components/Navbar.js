@@ -1,7 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Link from "next/link"
+
+
+
 const navigation = [
-    { name: 'Solutions', href: '#' },
-    { name: 'Pricing', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Marketing', href: 'MarketingPage' },
     { name: 'Company', href: '#' },
   ]
   
@@ -17,9 +21,11 @@ const navigation = [
               </a>
               <div className="ml-10 hidden space-x-8 lg:block">
                 {navigation.map((link) => (
+                  <Link href={link.href}>
                   <a key={link.name} href={link.href} className="text-base font-medium text-black hover:text-gray-500">
                     {link.name}
                   </a>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Link from 'next/link'
 
 
 export default function Hero() {
@@ -9,7 +10,7 @@ export default function Hero() {
       {/* Main front page UI */}
 
 
-      <main className="lg:relative bg-primary">
+      <main className="lg:relative bg-white">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-8  text-center lg:py-48 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
@@ -22,12 +23,14 @@ export default function Hero() {
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
+                <Link href="/MarketingPage">
                 <a
                   href="#"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white  md:py-4 md:text-lg md:px-10"
                 >
                   Marketing
                 </a>
+                </Link>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
