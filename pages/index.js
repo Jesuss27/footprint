@@ -10,19 +10,47 @@ import Feedback from "../components/Feedback"
 import Features from "../components/Features"
 import Download from "../components/Download"
 import Footer from "../components/Footer"
+import {motion} from "framer-motion"
 
 export default function Home() {
+  var componentArray = [
+    
+     <Philosophy key={"124"} />,
+     <About  key={"134"}/>,
+     <Contact key={"113"} />,
+     <Pricing key={"163"} />,
+     <Feedback key={"523"} />,
+     <Features  key={"173"}/>,
+     <Download key={"193"} />,
+     <Footer key={"129"} />,
+  ]
+
+  const variants = {
+    visible: {
+      opacity:1,
+      y:0,
+      transition:{
+        when:"beforeChildren",
+        duration:1,
+      }
+    },
+    hidden:{
+      opacity:0,
+      y:50,
+    }
+  }
+
+
   return (
-    <div >
-     <Hero />
-     <Philosophy />
-     <About />
-     <Contact />
-     <Pricing />
-     <Feedback />
-     <Features />
-     <Download />
-     <Footer />
+    <div>
+      <Hero key={"123"} />
+      <motion.div initial={"hidden"} animate={"visible"} variants={variants}>
+      
+     {componentArray.map((component) => (
+      <motion.div whileInView={"visible"} initial={"hidden"} variants={variants} key={component.key}>{component}</motion.div>
+     ))}
+    </motion.div>
     </div>
+    
   )
 }
