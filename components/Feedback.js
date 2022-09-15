@@ -1,22 +1,27 @@
 /* This example requires Tailwind CSS v2.0+ */
+import female1 from "../images/female-pic-min.jpg"
+import female2 from "../images/female-pic-2-min.jpg"
+import male1 from "../images/female-pic-min.jpg"
+import Image from "next/image"
+
 const infos = [
     {
         title:"CEO",
         name:"Jennifer Townsley",
         testimony:"Testimonals are short quotes from people wo love your brand. It's a great way to convince customers to try your services.",
-        imageUrl:"https://source.unsplash.com/3TLl_97HNJo",
+        imageUrl:female1,
     },
     {
         title:"CFO",
         name:"Bradley Chetsworth",
         testimony:"Testimonals are short quotes from people wo love your brand. It's a great way to convince customers to try your services.",
-        imageUrl:"https://source.unsplash.com/7YVZYZeITc8",
+        imageUrl:female2,
     },
     {
         title:"Lead Engineeer",
         name:"Armando Higuera",
         testimony:"Testimonals are short quotes from people wo love your brand. It's a great way to convince customers to try your services.",
-        imageUrl:"https://source.unsplash.com/cdksyTqEXzo",
+        imageUrl:male1,
     },
   ]
   
@@ -29,11 +34,11 @@ const infos = [
         <h2 className="text-6xl font-bold text-center mb-40 text-gray-300">Testimonials</h2>
           <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {infos.map((info) => (
-              <div key={info.title} className="flex relative flex-col rounded-lg shadow-lg mb-20 ">
-                <div className="absolute inset-x-0 top-0 translate-y-px transform ">
-                  <img className=" h-24 w-24 lg:h-36 lg:w-36 -translate-y-1/2 transform justify-center mx-auto rounded-full object-cover" src={info.imageUrl} alt="" />
+              <div key={info.title} className="flex relative flex-col bg-white rounded-lg shadow-lg p-6 mb-20 ">
+                <div className="w-20 h-20 absolute -top-2 -left-2 rounded-full bg-black overflow-hidden">
+                  <Image src={info.imageUrl} className="w-full h-full" />
                 </div>
-                <div className="flex flex-1 flex-col justify-between bg-white p-6 pt-20 ">
+                <div className="flex flex-1 flex-col justify-between mt-14 ">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-indigo-600">
                         {info.title}

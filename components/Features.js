@@ -1,5 +1,10 @@
 import { CameraIcon } from '@heroicons/react/20/solid'
 import MarketingItem from './MarketingItem'
+import lightBulb from "../images/light-bulb-min.jpg"
+import branding from "../images/branding-min.jpg"
+import handheld from "../images/handheld-min.jpg"
+import computer from "../images/computer-min.jpg"
+import Image from 'next/image'
 
 const features = [
     {
@@ -8,7 +13,7 @@ const features = [
         `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Culpa at odit neque corporis reiciendis sapiente, reprehenderit dolor 
         harum accusantium amet temporibus est ut sit obcaecati.` ,
-        imageUrl:"https://source.unsplash.com/fIq0tET6llw",
+        imageUrl:lightBulb,
     },
     {
         title:"Beautiful Branding",
@@ -16,7 +21,7 @@ const features = [
         `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Culpa at odit neque corporis reiciendis sapiente, reprehenderit dolor 
         harum accusantium amet temporibus est ut sit obcaecati.` ,
-        imageUrl:"https://source.unsplash.com/FeuEg-8XlA8",
+        imageUrl:branding,
     },
     {
         title:"Communications Strategy",
@@ -24,7 +29,7 @@ const features = [
         `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Culpa at odit neque corporis reiciendis sapiente, reprehenderit dolor 
         harum accusantium amet temporibus est ut sit obcaecati.` ,
-        imageUrl:"https://source.unsplash.com/Tk9m_HP4rgQ",
+        imageUrl:handheld,
     },
 ]
 
@@ -65,9 +70,9 @@ export default function Example() {
             <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <img
-                    className="rounded-lg object-cover object-center shadow-lg"
-                    src="https://source.unsplash.com/J3AV8F-B42M"
+                  <Image
+                    className="rounded-lg object-cover object-center shadow-lg object-position-right"
+                    src={computer}
                     alt="Whitney leaning against a railing on a downtown street"
                     width={1184}
                     height={1376}
@@ -80,9 +85,6 @@ export default function Example() {
             {
                 features.map(feature => <MarketingItem title={feature.title} key={feature.title} description={feature.description} imageUrl={feature.imageUrl}  />)
             }
-            
-
-            
           </div>
         </div>
       </div>

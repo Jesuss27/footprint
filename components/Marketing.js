@@ -1,5 +1,8 @@
 import React from 'react'
 import InnerMarketing from './InnerMarketing'
+import computer from "../images/computer-min.jpg"
+import journal from "../images/journal-min.jpg"
+import minimalBanner from "../images/minimal-banner-min.jpg"
 
 function Marketing() {
     const marketingContent = [
@@ -10,7 +13,7 @@ function Marketing() {
             If there is a portion of your idea that we cannot achieve we will help
             you find the right person. No matter what, we got you when it comes to marketing.`,
             CTA:true,
-            image:"https://source.unsplash.com/VieM9BdZKFo",
+            image:computer,
             key:"sdf8asdjf8"
         },
         {
@@ -20,7 +23,7 @@ function Marketing() {
             to help your dreams become a reality. Out collaborative creative meets data approach
             esures your brand will make a lasting impact to your target demographic.`,
             CTA:false,
-            image:"https://source.unsplash.com/pVt9j3iWtPM",
+            image:journal,
             key:"sdf866387685f8"
         },
         {
@@ -30,7 +33,7 @@ function Marketing() {
             If there is a portion of your idea that we cannot achieve we will help
             you find the right person. No matter what, we got you when it comes to marketing.`,
             CTA:true,
-            image:"https://source.unsplash.com/bU6JyhSI6zo",
+            image:minimalBanner,
             key:"5595dfg23asdjf8"
         },
     ]

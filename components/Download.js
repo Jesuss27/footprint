@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Image from "next/image"
+import handheld from "../images/handheld-min.jpg"
 
 
 export default function Hero() {
@@ -8,10 +9,10 @@ export default function Hero() {
         {/* Main front page UI */}
         <main className=" max-w-7xl mx-auto">
           <div className="flex pb-20 pt-16  lg:grid lg:grid-cols-2">
-            <div className=" hidden lg:block relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2 lg:h-full">
-                <img
+            <div className=" hidden lg:block relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2 lg:h-full overflow-hidden">
+                <Image
                 className="absolute inset-0 w-full h-full object-cover"
-                src="https://source.unsplash.com/Nf5fSqHm-iY"
+                src={handheld}
                 alt=""
                 />
             </div>

@@ -16,8 +16,8 @@ export default function Example() {
     <div className="bg-white">
       <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
-          <h2 className="text-6xl font-bold text-gray-300">Websites</h2>
-          <p className="mx-auto mt-3 max-w-4xl text-xl text-gray-300 sm:mt-5 sm:text-2xl">
+          <h2 className="text-6xl font-bold text-left md:text-center lg:text-center text-gray-300">Websites</h2>
+          <p className="mx-auto mt-3 max-w-4xl text-xl text-gray-300 sm:mt-5 sm:text-2xl text-left md:text-center lg:text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus
             molestiae voluptatum.
           </p>

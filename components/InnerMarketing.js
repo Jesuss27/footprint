@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image"
 
 function InnerMarketing({header,description,CTA,image}) {
   return (
@@ -36,8 +37,8 @@ function InnerMarketing({header,description,CTA,image}) {
 
                 </div>
             </main>
-            <div className="lg:h-96 lg:w-full mt-20">
-                <img
+            <div className="lg:h-96 lg:w-full mt-20 overflow-hidden">
+                <Image
                 className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
                 src={image}
                 alt=""
