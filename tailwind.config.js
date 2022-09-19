@@ -7,9 +7,10 @@ module.exports = {
     colors:{
       primary:"#FFF6C9",
       secondary:"",
-      gray:"",
+      gray:"#e1e1e1",
       black:"#000",
       white:"#fff",
+      submit:"#42ba96",
 
 
     },
@@ -28,9 +29,6 @@ module.exports = {
             transform: "translateX(-2.5rem)"
           }
         },
-      },
-      backgroundImage:{
-        'marketing-img':"url(https://source.unsplash.com/jyoSxjUE22g)",
       },
       maxWidth:{
         "h1":"20ch"

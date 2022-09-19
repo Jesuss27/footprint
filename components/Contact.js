@@ -5,7 +5,7 @@ export default function Example() {
     return (
       <div className="relative bg-white">
         <div className="lg:absolute lg:inset-0 lg:h-screen">
-          <div className="sm:h-72 md:h-96 lg:h-screen lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 overflow-hidden">
+          <div className="h-60 sm:h-72 md:h-96 lg:h-screen lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 overflow-hidden">
             <Image
               className="h-56 w-full object-cover lg:absolute lg:h-full"
               src={contact}

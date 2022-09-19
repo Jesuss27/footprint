@@ -5,9 +5,17 @@ function FormInput({index,current, header, placeholder, inputType}) {
   return (
             <div className={`${index===current ? "input active" : "input"}  transition transition-all border-none rounded-2xl drop-shadow-2xl bg-white w-full h-96  p-10  shrink-0`}>
                 <h2 className="text-xl w-full text-left">{header}</h2>
-                {inputType !== "checkbox" && (
-                        <input className="mx-auto w-full" type={inputType} placeholder={placeholder} required />
+                {inputType === "text" && (
+                        <input className="mx-auto w-full bg-gray p-2.5 border-none outline-none rounded-md break-normal" type={inputType} placeholder={placeholder} required />
                 )}
+
+                {
+                  inputType ==="textarea" && (
+                    <textarea className="mx-auto w-full bg-gray p-2.5 rounded-md border-none outline-none break-normal" rows="4" type={inputType} placeholder={placeholder} required></textarea>
+                  )
+
+                }
+
                 {inputType ==="checkbox" && (
                     <div className='mt-10'>
                         <input  className='mb-4' type="checkbox" id="<5" value="<5" />
